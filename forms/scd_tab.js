@@ -14,7 +14,7 @@ var vSchedulerJobsInfo = '';
  */
 function dc_new(_event, _triggerForm, _forceForm) 
 {
-	/** @type {JSFoundset<db:/svy_framework/scd>}*/
+	/** @type {JSFoundSet<db:/svy_framework/scd>}*/
 	var fsScd = databaseManager.getFoundSet(globals.Server.SVY_FRAMEWORK,'scd');
 	var success = fsScd.newRecord();
 	

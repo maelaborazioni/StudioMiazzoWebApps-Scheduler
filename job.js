@@ -3,7 +3,7 @@
  */
 function createJobRecord()
 {
-	/** @type {JSFoundset<db:/svy_framework/scd>}*/
+	/** @type {JSFoundSet<db:/svy_framework/scd>}*/
 	var fsScd = databaseManager.getFoundSet(globals.Server.SVY_FRAMEWORK,'scd');
 	var success = fsScd.newRecord();
 	    
@@ -19,7 +19,7 @@ function createJobRecord()
  */
 function deleteJobRecord(scdId)
 {
-	/** @type {JSFoundset<db:/svy_framework/scd>}*/
+	/** @type {JSFoundSet<db:/svy_framework/scd>}*/
 	var fsScd = databaseManager.getFoundSet(globals.Server.SVY_FRAMEWORK,'scd');
 	if(fsScd.find())
 	{
@@ -47,7 +47,7 @@ function deleteJobRecord(scdId)
  */
 function setJobStatus(scdId,status)
 {
-	/** @type {JSFoundset<db:/svy_framework/scd>}*/
+	/** @type {JSFoundSet<db:/svy_framework/scd>}*/
 	var fsScd = databaseManager.getFoundSet(globals.Server.SVY_FRAMEWORK,'scd');
 	if(fsScd.find())
 	{
@@ -76,7 +76,7 @@ function setJobStatus(scdId,status)
  */
 function resetScheduler(solutionName)
 {
-	/** @type {JSFoundset<db:/svy_framework/scd>}*/
+	/** @type {JSFoundSet<db:/svy_framework/scd>}*/
 	var fsScd = databaseManager.getFoundSet(globals.Server.SVY_FRAMEWORK,'scd');
 	if(fsScd.find())
 	{
